@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul li{
+    list-style: none;
+}
+
+/* Header Start */
+.header{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header .logo{}
+.header .logo img {
+    width: 90px;
+    margin: 7px 0;
+}
+.header .menu{}
+.header .menu ul{}
+.header .menu ul li{
+    display: inline-block;
+}
+.header .menu ul li a {
+    color: #000;
+    padding: 0 22px;
+    margin: -4px;
+    line-height: 81px;
+    font-size: 17px;
+}
+.banner{
+    background: url(./kobu-agency-IWLR561-Yb-MY-unsplash.jpg) no-repeat right center;
+    background-size: cover;
+    padding: 190px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner h1{
+    color: #fff;
+    font-size: 28px;
+    font-weight: normal;    
+}
+.banner h2{
+    color: #fff;
+    font-size: 60px;
+    padding: 25px 0 25px 0;
+    font-weight: 700;
+}
+.banner a {
+    background-color: #fff;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 19px 22px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: .5s;
+}
+.banner a:hover{
+    background-color: #d9a438;
+    color: #fff;
+}
+.banner a span{
+    display: inline-block;
+}
+
+/* app section */
+.app{
+background-color: #f7f7f7;
+padding-bottom: 40px;
+}
+.app h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    padding: 50px 0 25px;
+}
+.app p{
+    text-align: center;
+    padding: 10px 0 70px;
+}
+.pricing{}
+.pricing .pricing-box {
+    width: 31%;
+    margin: 1%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
+}
+.pricing .pricing-box:first-child{
+    margin-left: 0;
+}
+.pricing .pricing-box:last-child{
+    margin-right: 0;
+}
+.pricing .pricing-box .p-box-top{
+    padding: 30px;
+    transition: .5s;
+}
+.pricing .pricing-box:hover .p-box-top{
+    background-color: #f0952a;
+    color: #fff;
+}
+.pricing .pricing-box:hover .p-box-top h1{
+    background-color: #f0952a;
+    color: #fff;
+}
+.p-box-top h2{
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.p-box-top h1{
+    text-align-last: left;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 0px 10px;
+    background-color: #f7f7f7;
+    transition: .5s;
+}
+.p-box-top h1 span {
+    font-size: 19px;
+    font-weight: 600;
+}
+.p-box-top h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 40px 0 25px;
+}
+.p-box-top p{
+    text-align: left;
+    font-size: 19px;
+    padding: 0;
+}
+.pricing .pricing-box .p-box-bottom {
+    padding: 50px 25px 35px;
+}
+.p-box-bottom{}
+.p-box-bottom ul{}
+.p-box-bottom ul li {
+    font-size: 20px;
+    line-height: 55px;
+    color: #7f7876;
+}
+.p-box-bottom ul li span {
+    color: #e79230;
+    font-size: 30px;
+}
+.p-box-bottom a {
+    font-size: 19px;
+    font-weight: 500;
+    color: #7d7d7d;
+    box-shadow: 0px 0px 15px #0000ff36;
+    margin: 60px 93px 0;
+    padding: 17px 20px;
+    border-radius: 9px;
+    transition: .5s;
+}
+.pricing .pricing-box:hover a{
+    background-color: #f0952a;
+    color: #fff;
+}
+/* team section */
+.team{
+    padding: 50px 0;
+}
+.team h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding:55px 0;
+}
+.team .team-member{}
+.team .team-member .member{
+    width: 23%;
+    margin: 1%;
+    border: 7px double #f0952a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.226);
+}
+.team .team-member .member:first-child{
+    margin-left: 0;
+}
+.team .team-member .member:last-child{
+    margin-right: 0;
+}
+.member img{}
+.member h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 30px 25px 0 ;
+}
+.member p{
+    font-size: 20px;
+    padding: 15px 25px 30px ;
+}
+/* newsletter section */
+.newsletter{
+    background-color: #f5f5f5;
+    padding-bottom:80px ;
+}
+.newsletter p{
+    text-align: center;
+    padding-top: 90px;
+}
+.newsletter h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 60px 0;
+}
+.newsletter .email {
+    width: 530px;
+    margin: 0 30%;
+    padding: 20px 10px;
+    border: 3px solid #bdc731;
+    border-radius: 8px;
+    box-shadow: 0 0 23px #1d77fd21;
+}
+.newsletter .email:focus{
+    border: 3px solid #1d77fd;
+    box-shadow: 0 0 23px #1d77fd4d;
+}
+.newsletter button {
+    margin: 10px 43%;
+    padding: 15px 50px;
+    font-size: 19px;
+    border-radius: 8px;
+    background-color: #aa972c;
+    color: white;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+.newsletter button:hover{
+    color:#aa972c ;
+    background-color: #fff;
+    border: 3px solid #aa972c;
+}
+.about{}
+.about h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.about .image{
+    width: 45%;
+}
+.about .about-contant{
+    width: 55%;
+}
+.about .about-contant span{
+    padding: 20px 10px;
+}
+.about .about-contant h3 {
+    padding: 20px 10px 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.about .about-contant p {
+    padding: 13px 0;
+    font-size: 19px;
+    line-height: 34px;
+}
+/* blog section */
+.blog{
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+.blog p{
+    text-align: center;
+}
+.blog h1{
+    text-align: center;
+    padding: 60px 0 90px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.blog .blog-contant{}
+.blog-contant .blog-1{
+    width: 32%;
+    margin: 1%;
+    border: 3px solid #c3c5ce;
+}
+.blog-contant .blog-1:first-child{
+    margin-left: 0;
+}
+.blog-contant .blog-1:last-child{
+    margin-right: 0;
+}
+.blog-contant .blog-1 p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 45px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.205);
+    position: relative;
+}
+.blog-contant .blog-1 img {
+    width: 21%;
+    margin: 47px 0px -25px 80px;
+    border: 9px solid #aa972c;
+}
+.blog-contant .blog-1 .user-info {
+    display: inline-block;
+    padding: 0 18px 60px;
+}
+.blog-contant .blog-1 h4 {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.blog-contant .blog-1 span {
+    font-size: 19px;
+}
+.blog-1 p::after {
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    font-weight: 800;
+    position: absolute;
+    bottom: -23px;
+    left: 186px;
+    font-size: 75px;
+    color: rgb(255 255 255);
+}
+.blog-1 p::after {
+    content: "\f10d";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    position: absolute;
+    top: 33px;
+    left: 33px;
+    font-size: 75px;
+    color: #a4a1a11f;
+}
+/* contact Section */
+.contact{
+    text-align: center;
+    padding: 80px 0;
+}
+.contact h1{
+    font-weight: 500;
+}
+.contact p {
+    padding: 33px 300px;
+    font-size: 19px;
+    line-height: 28px;
+}
+.form-contant {
+    padding: 17px 10px 17px 15px;
+    border-radius: 8px;
+    border: 2px solid #aa972c;
+}
+.form-contant:focus{
+    border: 2px solid #7a96be;
+    box-shadow: 0 0 23px #1d77fd4d;
+}
+form .email {
+    width: 50%;
+    margin: 0 auto;
+}
+.name {
+    width: 24.5%;
+}
+.phone {
+    width: 24%;
+    margin-left: 1%;
+}
+.message {
+    width: 50%;
+}
+.btn {
+    padding: 18px 65px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #aa972c;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.btn:hover{
+    color: #aa972c;
+    background-color: white;
+    border: 2px solid #aa972c;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footer p{
+    font-size: 20px;
+}
+
+
+
+footer:nyn
